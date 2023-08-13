@@ -20,7 +20,10 @@ window.onload = function () {
         }else if(document.getElementById("vanilla").checked){
             console.log("vanilla");
             server = "minecraft_server*.jar"
-            outputContainer.innerHTML = `${cmd} ${server}`
+            cmd =  `${cmd} ${server}`;
+            outputContainer.innerHTML = cmd;
+            navigator.clipboard.writeText(cmd);
+            outputContainer.style.visibility = "visible";
             return;
         }else if(document.getElementById("paper").checked){
             console.log("paper");
