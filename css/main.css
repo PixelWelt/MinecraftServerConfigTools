@@ -1,0 +1,32 @@
+.tool{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3rem;  
+}
+#settingsContainer{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 3rem;
+}
+input{
+    margin-top: 1rem;
+}
+#ramSlider{
+    width: 100%;
+}
+#ramValue{
+    margin-top: 2rem;
+    text-align: center;
+    margin-bottom: 0rem;
+}
+#outputContainer{
+    margin-top: 4rem;
+    text-align: center;
+    font-size: large;
+    color: red;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 3rem;
+    visibility: hidden;
+}

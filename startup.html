@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Minecraft Server Config Tools - Startup Script</title>
+        <script src="startup.js"></script>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <a href="index.html">return</a>
+        <div class="tool">
+            <div id="settingsContainer">
+                <form id="form">
+                    Server Type <br> <label></label><input type="radio" name="serverType" id="vanilla">Vanilla</input> </label>
+                    <label> <input type="radio" name="serverType" id="spigot">Spigot</input> </label>
+                    <label> <input type="radio" name="serverType" id="paper">Paper</input> </label>
+                    <br>
+                    <p id="ramValue">RAM 4gb</p><input type="range" min="1" max="128" value="4" step="0.5"  class="slider" id="ramSlider"></label>
+                    <br>
+                    <h3>Paper and Spigot options</h3>
+                    <input type="checkbox" id="agreeToEula">Agree to Eula</input>
+                    <br>
+                    <input type="checkbox" id="noConsole">No Console</input>
+                    <br>
+                    <input type="checkbox" id="noGUI">No Gui</input>
+                    <br>
+                    <label>Port: <input type="number" id="port"></input></label>
+                    <br> 
+                    <input type="button" id="generateBtn" value="Generate Script and save to Clipboard" ></input>
+                </form>
+            </div>
+            <div id="outputContainer">
+                <code id="output"></code>
+            </div>
+        </div>
+    </body>
+</html>
